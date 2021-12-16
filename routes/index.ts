@@ -1,3 +1,10 @@
-import mainPageRouter from "./mainPage";
+import express from "express";
+import path from "path";
 
-export { mainPageRouter };
+const indexRouter = express.Router();
+
+indexRouter.get("/", (req, res, next) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
+
+export { indexRouter };
