@@ -15,7 +15,14 @@ indexRouter.get("/callback", async (req, res) => {
   const searchParams = new URLSearchParams(data);
   const accessToken = searchParams.get("access_token");
 
-  res.send(accessToken);
+  console.log(accessToken);
+
+  const response = await axios.get("https://api.github.com/user", {
+    headers: {
+      Authorization: `bearer ${accessToken}`,
+    },
+  });
+  res.send(response.data);
 });
 
 export { indexRouter };
