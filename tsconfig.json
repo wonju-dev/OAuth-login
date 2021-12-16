@@ -5,7 +5,9 @@
     "module": "commonjs",
     "strict": true,
     "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "baseUrl": "."
   },
   "exclude": ["node_modules"]
 }

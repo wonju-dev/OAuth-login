@@ -10,6 +10,4 @@ Passport.js 없이 OAuth를 통한 로그인을 구현해보자
 
 4. Express Generator 없이 Express 환경 설정 하기 O
 
-5. Passport.js 없이 OAuth login 구현 -> Manual branch 참고
-
-6. Passport.js 로 OAuth login 구현 -> passport branch 참고
+5. Passport.js 없이 OAuth login 구현 O
