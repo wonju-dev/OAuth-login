@@ -6,7 +6,6 @@ dotenv.config();
 
 const app = express();
 
-app.listen(3000, () => console.log("connected"));
-
+app.listen(Number(process.env.PORT), () => console.log("connected"));
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
